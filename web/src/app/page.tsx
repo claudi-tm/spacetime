@@ -7,9 +7,9 @@ export default function Home() {
       <main className="grid grid-cols-2 min-h-screen">
         {/* Left */}
 
-        <div className="flex flex-col items-start justify-between px-28 py-16 relative border-r border-white/10 bg-[url(../assets/bg-stars.svg)] bg-cover">
+        <div className="flex flex-col items-start justify-between px-28 py-16 relative border-r border-white/10 bg-[url(../assets/bg-stars.svg)] bg-cover overflow-hidden">
           {/* blur */}
-          <div className="absolute right-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-1/2 overflow-hidden  rounded-full blur-full bg-purple-700 opacity-50"></div>
+          <div className="absolute right-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-1/2 rounded-full blur-full bg-purple-700 opacity-50"></div>
           {/* stripes */}
           <div className="absolute right-2 top-0 bottom-0 w-2 bg-stripes " />
 
@@ -34,20 +34,20 @@ export default function Home() {
             {/* Space-y-5 Coloca espaco de 20 5*4 em cada elemento da div */}
             <Image src={nlwLogo} alt="NLW Spacetime Logo" />
             <div className="max-w-[420px] space-y-1">
-              <h1 className="mt-5 text-5xl font-bold leading-tight text-gray-50">
+              <h1 className="text-5xl font-bold leading-tight text-gray-50">
                 Sua cápsula do tempo
               </h1>
-              <p className="text-lg my-1 leading-relaxed">
+              <p className="text-lg leading-relaxed">
                 Colecione momentos marcantes da sua jornada e compartilhe (se
                 quiser) com o mundo!
               </p>
-              <a
-                href=""
-                className="absolute rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black hover:bg-green-600"
-              >
-                CADASTRAR LEMBRANÇA
-              </a>
             </div>
+            <a
+              href=""
+              className="inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black hover:bg-green-600"
+            >
+              CADASTRAR LEMBRANÇA
+            </a>
           </div>
 
           {/* Copywrite */}
@@ -65,9 +65,9 @@ export default function Home() {
         </div>
 
         {/* Right */}
-        <div className="flex flex-col p-16 bg-[url(../assets/bg-stars.svg)] bg-cover bg-stone-950 relative">
+        <div className="flex flex-col  bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
           <div className="flex flex-1 items-center justify-center">
-            <p className="text-center leading-relaxed w-[360px]">
+            <p className="w-[360px] text-center leading-relaxed ">
               Você ainda não registrou nenhuma lembrança, comece a
               <a href="" className="underline hover:text-gray-50">
                 {' '}
